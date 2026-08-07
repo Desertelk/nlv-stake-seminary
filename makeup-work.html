@@ -7,6 +7,7 @@
     <meta name="author" content="Caden Watts">
     <meta name="description" content="Website where the youth of the North Las Vegas Stake can go to find information pertaining to their seminary class.">
     <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/script.js" defer></script>
 </head>
 <body>
     <header>
@@ -21,7 +22,18 @@
     </header>
     <main>
         <h2>Makeup Work</h2>
-        
+        <div class="lesson-search">
+            <label for="lesson-date">Search lessons by date:</label>
+            <input type="date" id="lesson-date">
+            <button type="button" id="search-button">
+                Search
+            </button>
+            <button type="button" id="clear-button">
+                Clear
+            </button>
+        </div>
+
+        <div id="lesson-results"></div>
     </main>
     <footer>
 
