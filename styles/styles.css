@@ -1,5 +1,5 @@
 :root {
-    --Header-text: #7aade0;
+    --Header-text: #7bb0ff;
     --body-text: #4f66c0;
     --background: #eee;
     --accent: #4f66c0;
@@ -32,11 +32,19 @@ header {
     /* background-color: ; */
     text-align: center;
     padding: 4rem 1rem;
+
+    background: linear-gradient(rgba(0,0,0,.35),rgba(0,0,0,.35)), url("../images/starry-night-sky.webp");
+    background-image: url("../images/starry-night-sky.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 header h1{
-    color: var(--Header-text);
+    color: white;
     font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-shadow: 0 2px 8px rgba(0,0,0,.5);
 }
 
 header ul {
@@ -46,12 +54,14 @@ header ul {
 
     list-style: none;
     margin-top: 2rem;
+    padding-bottom: 1rem;
 }
 
 header a {
     text-decoration: none;
-    color: var(--Header-text);
-    font-weight: bold;
+    color: white;
+    font-weight: 800;
+    font-size: 1.3rem;
     transition: .2s;
 }
 
